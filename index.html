@@ -27,7 +27,7 @@
 
   <div class="top-container">
     <img class="top-cloud" src="images/cloud.png" alt="cloud-img">
-    <h1>I am Nahomie Tagne.</h1>
+    <h1 id="animate"></h1>
     <h2>a student and programmer.</h2>
     <img class="bottom-cloud" src="images/cloud.png" alt="cloud-img">
     <img src="images/mountain.png" alt="mouantain-img">
@@ -79,7 +79,7 @@
           </ul>
 
         </div>
-          <img class="apple" src="https://miro.medium.com/max/500/1*47_52IL8qKK0K7_LP7EvlA.jpeg" alt="cakes">
+        <img class="apple" src="https://miro.medium.com/max/500/1*47_52IL8qKK0K7_LP7EvlA.jpeg" alt="cakes">
       </div>
     </div>
     <hr>
@@ -97,6 +97,24 @@
     <a class="footer-link" href="https://www.appbrewery.co/">Website</a>
     <p id="madeby">© Nahomiereine.</p>
   </div>
+
+  <script>
+    var i = 0;
+    var txt = 'I am Nahomie Tagne.';
+    var speed = 75;
+
+    function typeWriter() {
+      if (i < txt.length) {
+        document.getElementById("animate").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+      }
+    }
+
+    typeWriter();
+
+  </script>
+
 
 </body>
 
