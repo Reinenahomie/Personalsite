@@ -1,0 +1,14 @@
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-table {
+  text-align: left;
+}
+
+.contact-button {
+  border: 0px;
+  padding: 5px 10px;
+}

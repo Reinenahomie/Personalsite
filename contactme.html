@@ -3,22 +3,39 @@
   <head>
     <meta charset="utf-8">
     <title>My contact</title>
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Merriweather:ital,wght@0,400;1,300&family=Sacramento&display=swap" rel="stylesheet">
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Merriweather:ital,wght@0,400;1,300&family=Sacramento&display=swap" rel="stylesheet">
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Merriweather:ital,wght@0,400;1,300&family=Sacramento&display=swap" rel="stylesheet">
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=El+Messiri&family=Lobster&family=Merriweather:ital,wght@0,400;1,300&family=Sacramento&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
       <link rel="icon" href="logopondlogo.png">
   </head>
   <body class="bodycontact">
 
-    <div class="">
+    <div class="contact-container">
 
-  <h1>CONTACT ME</h1>
-  <table cellspacing='10'>
+  <h2>CONTACT ME</h2>
+  <table class="contact-table" cellspacing='25'>
     <tr>
       <td>Number</td>
       <td> 01788998045</td>
     </tr>
     <tr>
       <td>Email</td>
-      <td> <a id="contact-page"href="mailto:nahomietagne2@gmail.com">nahomietagne2@gmail.com</a></td>
+      <td> <a id="contact-page" style="margin:0px" href="mailto:nahomietagne2@gmail.com">nahomietagne2@gmail.com</a></td>
     </tr>
     <tr>
       <td>Adresse</td>
@@ -27,16 +44,23 @@
     </tr>
   </table>
   <hr>
-<form  action="mailto:nahomietagne2@gmail.com" method="post" enctype="text/plain">
-  <label>Your name:</label>
-  <input type="text" name="Your name"><br>
-  <label>Your Email:</label>
-  <input type="email" name="Your Email"><br>
-  <label>Your Message:</label>
-  <textarea name="name" rows="10" cols="30"></textarea><br>
-  <input type="submit" name="">
 
+<form style="text-align:left" action="https://submit-form.com/N3W38x4P">
+  <label for="name">Name</label><br />
+  <input type="text" id="name" name="name" placeholder="Name" required="" /><br /><br />
+  <label for="email">Email</label><br />
+  <input type="email" id="email" name="email" placeholder="Email" required="" /><br /><br />
+  <label for="message">Message</label><br />
+  <textarea
+    rows="8" cols="30"
+    id="message"
+    name="message"
+    placeholder="Message"
+    required=""
+  ></textarea><br /><br />
+  <button class="btn contact-button" type="submit">Send</button>
 </form>
+
 
 </div>
 
